@@ -1,8 +1,6 @@
 def solution(board, h, w):
-    answer = 0
     count = 0
 
-            
     n = len(board)
     
     dh = [0,1,-1,0]
@@ -16,5 +14,4 @@ def solution(board, h, w):
             if board[h][w] == board[h_check][w_check] :
                 count+=1
         
-    answer = count
-    return answer
+    return count
